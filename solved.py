@@ -208,16 +208,4 @@ print(vowels(string))
 
 
 
-select first_name, title
-from employees
-join projects on
-employees.id=projects.id
-where title='Update TPS Reports'
-group by projects.title,employees.first_name
-;
 
-
-select first_name,min(budget) from employees
-join projects on
-employees.id=projects.id
-group by projects.budget,employees.first_name;
